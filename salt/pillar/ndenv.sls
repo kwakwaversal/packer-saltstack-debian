@@ -1,20 +1,15 @@
 ndenv:
   # See https://github.com/kwakwaversal/saltstack-formula-ndenv/blob/master/pillar.example
   node:
-    global: ''
+    global: 7.7.1
     packages_install_options: ''
-    packages: []
+    packages:
+      - grunt
+      - gulp
     versions:
-      - 7.3.0
+      - 7.7.1
+
   users:
     vagrant:
       user: vagrant
       group: vagrant
-      node:
-        global: 7.3.0
-        packages_install_options: ''
-        packages:
-          - grunt
-          - gulp
-        versions:
-          - 7.3.0

@@ -15,7 +15,7 @@ I try to keep a version of this up-to-date and available on HashiCorp, so you
 can check it out without having to roll your own.
 
 ```sh
-$ vagrant init my/debian-jessie64
+$ vagrant init kwakwa/debian-jessie64
 $ vagrant up
 ```
 
@@ -27,8 +27,16 @@ includes [ndenv](https://github.com/riywo/ndenv),
 perl-specific tools to provide a useful toolchain for Perl web developers
 out of the box.
 
+# Pre-baked user tools
+A list of tools that are pre-baked in this `Vagrant` box.
+
+* Debian 8.7 (Jessie)
+* ndenv (node 7.7.1 with grunt and gulp)
+* plenv (perl 5.24.1 with Carton, Moo, and Moose)
+* Packages (git, htop, jq, ntp, strace, tmux, tree, vim)
+
 # Toolchain
-A few different tools are used to bring this `Vagrant` box together.
+The tools used to bring this `Vagrant` box together.
 
 ## Debian
 [Debian](https://www.debian.org/) is used as the host environment for the
