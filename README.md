@@ -11,6 +11,14 @@ $ vagrant init my/debian-jessie64
 $ vagrant up
 ```
 
+I try to keep a version of this up-to-date and available on HashiCorp, so you
+can check it out without having to roll your own.
+
+```sh
+$ vagrant init my/debian-jessie64
+$ vagrant up
+```
+
 # Description
 This repository contains the `Packer` configuration which will create a
 `Vagrant` box for the `VirtualBox` provider. This is a pre-baked box which
