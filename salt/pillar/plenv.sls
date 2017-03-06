@@ -4,6 +4,8 @@ plenv:
     global: 5.24.1
     packages:
       - Carton
+      - Moo
+      - Moose
     versions:
       - 5.24.1
 
