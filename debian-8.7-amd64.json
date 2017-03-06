@@ -112,6 +112,7 @@
       "scripts": [
         "scripts/common/metadata.sh",
         "scripts/debian/update.sh",
+        "scripts/provisioning/packages.sh",
         "scripts/common/sshd.sh",
         "scripts/debian/networking.sh",
         "scripts/debian/sudoers.sh",
@@ -119,7 +120,25 @@
         "scripts/debian/systemd.sh",
         "scripts/common/virtualbox.sh",
         "scripts/common/vmware.sh",
-        "scripts/common/parallels.sh",
+        "scripts/common/parallels.sh"
+      ],
+      "type": "shell"
+    },
+    {
+      "type": "salt-masterless",
+      "local_state_tree": "./salt/recipe",
+      "local_pillar_roots": "./salt/pillar",
+      "minion_config": "./salt/etc/minion"
+    },
+    {
+      "environment_vars": [
+        "HOME_DIR=/home/vagrant",
+        "http_proxy={{user `http_proxy`}}",
+        "https_proxy={{user `https_proxy`}}",
+        "no_proxy={{user `no_proxy`}}"
+      ],
+      "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E sh -eux '{{.Path}}'",
+      "scripts": [
         "scripts/debian/cleanup.sh",
         "scripts/common/minimize.sh"
       ],
