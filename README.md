@@ -24,7 +24,7 @@ A few different tools are used to bring this `Vagrant` box together.
 
 ## Debian
 [Debian](https://www.debian.org/) is used as the host environment for the
-Vagrant box. Specifically the `debian-8.7-amd64`.
+Vagrant box. Specifically `debian-8.7-amd64`.
 
 ## Packer
 [Packer](https://www.packer.io/) is a tool for creating machine and container
