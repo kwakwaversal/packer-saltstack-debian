@@ -14,7 +14,8 @@ $ vagrant up
 # Description
 This repository contains the `Packer` configuration which will create a
 `Vagrant` box for the `VirtualBox` provider. This is a pre-baked box which
-includes [ndenv](https://github.com/riywo/ndenv), [plenv](https://github.com/tokuhirom/plenv) and a few common node and
+includes [ndenv](https://github.com/riywo/ndenv),
+[plenv](https://github.com/tokuhirom/plenv) and a few common node and
 perl-specific tools to provide a useful toolchain for Perl web developers
 out of the box.
 
@@ -23,14 +24,19 @@ A few different tools are used to bring this `Vagrant` box together.
 
 ## Debian
 [Debian](https://www.debian.org/) is used as the host environment for the
-Vagrant box. Specifically the `debian0-8.7-amd64`.
+Vagrant box. Specifically the `debian-8.7-amd64`.
 
 ## Packer
 [Packer](https://www.packer.io/) is a tool for creating machine and container
 images for multiple platforms from a single source configuration.
 
+## SaltStack
+[SaltStack](https://saltstack.com/) systems & configuration management software
+delivers fast & scalable event-driven infrastructure automation & predictive
+cloud orchestration.
+
 ## Vagrant
-[Vagrant](https://www.vagrantup.com/) creates and configure lightweight,
+[Vagrant](https://www.vagrantup.com/) creates and configures lightweight,
 reproducible, and portable development environments.
 
 ## VirtualBox
