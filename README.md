@@ -38,25 +38,16 @@ A list of tools that are pre-baked in this `Vagrant` box.
 # Toolchain
 The tools used to bring this `Vagrant` box together.
 
-## Debian
-[Debian](https://www.debian.org/) is used as the host environment for the
+* [Debian](https://www.debian.org/) is used as the host environment for the
 Vagrant box. Specifically `debian-8.7-amd64`.
-
-## Packer
-[Packer](https://www.packer.io/) is a tool for creating machine and container
+* [Packer](https://www.packer.io/) is a tool for creating machine and container
 images for multiple platforms from a single source configuration.
-
-## SaltStack
-[SaltStack](https://saltstack.com/) systems & configuration management software
-delivers fast & scalable event-driven infrastructure automation & predictive
-cloud orchestration.
-
-## Vagrant
-[Vagrant](https://www.vagrantup.com/) creates and configures lightweight,
+* [SaltStack](https://saltstack.com/) systems & configuration management
+software delivers fast & scalable event-driven infrastructure automation &
+predictive cloud orchestration.
+* [Vagrant](https://www.vagrantup.com/) creates and configures lightweight,
 reproducible, and portable development environments.
-
-## VirtualBox
-[VirtualBox](https://www.virtualbox.org/) is a powerful x86 and AMD64/Intel64
+* [VirtualBox](https://www.virtualbox.org/) is a powerful x86 and AMD64/Intel64
 virtualization product for enterprise as well as home use.
 
 # References
